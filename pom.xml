@@ -26,7 +26,7 @@
 	<modules>
 		<module>profile-api</module>
 		<module>user-cxf</module>
-		<module>user-profile-cxf</module>
+		<module>user-accounts-cxf</module>
 	</modules>
 
 	<build>
