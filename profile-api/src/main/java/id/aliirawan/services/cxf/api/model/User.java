@@ -1,4 +1,4 @@
-package id.aliirawan.model;
+package id.aliirawan.services.cxf.api.model;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import java.util.List;
  * An user can have multiple accounts
  * 
  * @author aliirawan
- * @see id.aliirawan.model.UserAccount
+ * @see id.aliirawan.services.cxf.api.model.UserAccount
  */
 public class User {
 
@@ -22,6 +22,17 @@ public class User {
 	 */
 	public User() {
 	}
+
+	
+	/**
+	 * @param id
+	 * @param name
+	 */
+	public User(Integer id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+
 
 	/**
 	 * @param id

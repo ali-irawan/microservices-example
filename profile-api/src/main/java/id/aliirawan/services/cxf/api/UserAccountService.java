@@ -1,4 +1,4 @@
-package id.aliirawan;
+package id.aliirawan.services.cxf.api;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 
-import id.aliirawan.model.UserAccount;
+import id.aliirawan.services.cxf.api.model.UserAccount;
 
 public interface UserAccountService {
 

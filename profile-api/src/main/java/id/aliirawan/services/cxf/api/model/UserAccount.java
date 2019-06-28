@@ -1,4 +1,4 @@
-package id.aliirawan.model;
+package id.aliirawan.services.cxf.api.model;
 
 /**
  * Model class for user account
