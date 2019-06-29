@@ -4,8 +4,16 @@ ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64
 ENV KARAF_VERSION=4.0.8
 
 # Version 4.0.8 is in archive
-RUN wget http://archive.apache.org/dist/karaf/${KARAF_VERSION}/apache-karaf-${KARAF_VERSION}.tar.gz; \
-# RUN wget https://www-us.apache.org/dist/karaf/${KARAF_VERSION}/apache-karaf-${KARAF_VERSION}.tar.gz; \
+# Check here https://karaf.apache.org/download.html
+
+# For active distributions
+# ENV KARAF_URL=https://www-us.apache.org
+
+# For archived distributions
+ENV KARAF_URL=http://archive.apache.org
+
+
+RUN wget ${KARAF_URL}/dist/karaf/${KARAF_VERSION}/apache-karaf-${KARAF_VERSION}.tar.gz; \
     mkdir /opt/karaf; \
     tar --strip-components=1 -C /opt/karaf -xzf apache-karaf-${KARAF_VERSION}.tar.gz; \
     rm apache-karaf-${KARAF_VERSION}.tar.gz; \

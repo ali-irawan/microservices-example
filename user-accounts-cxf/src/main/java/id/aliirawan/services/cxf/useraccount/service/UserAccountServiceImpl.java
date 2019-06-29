@@ -31,4 +31,18 @@ public class UserAccountServiceImpl implements UserAccountService {
 		return accounts.stream().filter(a -> a.getId().equals(userId)).collect(Collectors.toList());
 	}
 
+	/**
+	 * @return the accounts
+	 */
+	public List<UserAccount> getAccounts() {
+		return accounts;
+	}
+
+	/**
+	 * @param accounts the accounts to set
+	 */
+	public void setAccounts(List<UserAccount> accounts) {
+		this.accounts = accounts;
+	}
+
 }
