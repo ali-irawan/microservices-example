@@ -14,7 +14,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<cxf.version>3.3.2</cxf.version>
+		<cxf.version>3.1.10</cxf.version>
 		<jackson.version>1.9.13</jackson.version>
 		<jackson-jaxrs-json-provider.version>2.7.6</jackson-jaxrs-json-provider.version>
 		<osgi.version>6.0.0</osgi.version>

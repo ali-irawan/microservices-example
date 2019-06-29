@@ -35,4 +35,32 @@ public class UserServiceImpl implements UserService {
 		return users;
 	}
 
+	/**
+	 * @return the userAccountService
+	 */
+	public UserAccountService getUserAccountService() {
+		return userAccountService;
+	}
+
+	/**
+	 * @param userAccountService the userAccountService to set
+	 */
+	public void setUserAccountService(UserAccountService userAccountService) {
+		this.userAccountService = userAccountService;
+	}
+
+	/**
+	 * @return the users
+	 */
+	public List<User> getUsers() {
+		return users;
+	}
+
+	/**
+	 * @param users the users to set
+	 */
+	public void setUsers(List<User> users) {
+		this.users = users;
+	}
+
 }

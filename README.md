@@ -1,5 +1,9 @@
 # microservices-example
+
 Microservices-example based on OSGi bundle
+Deploying to Apache Karaf Runtime
+
+## Getting Started
 
 Build Karaf for Docker
 
@@ -37,14 +41,29 @@ Run the **client**
 	
 	./client
 	
-Install features required
+## Install features required
 
-If you are using **Apache Karaf 4.2.6**, please use **cxf 3.3.2**
-You may need to use correct version that supported by Karaf Runtime
+### Using Apache Karaf 4.0.8
+If you are using **Apache Karaf 4.0.8** (Archived), please use **cxf 3.1.10**
 
-	feature:repo-add cxf 3.3.2
+Install Apache Felix WebConsole
+
+	feature:install webconsole
+
+Add Repo for CXF
+
+	feature:repo-add cxf 3.1.10
+
+Install features for CXF
+
 	feature:install http cxf-jaxrs cxf
+
+Add Repo for Jackson
+
 	feature:repo-add mvn:org.code-house.jackson/features/2.7.6/xml/features
+	
+Install features for Jackson-JAXRS-JSON
+	
 	feature:install jackson-jaxrs-json-provider jetty
 	
 Open the Apache Felix WebConsole from Web Browser
@@ -54,6 +73,14 @@ Open the Apache Felix WebConsole from Web Browser
 For example:
 
 	http://192.168.1.50:8181/system/console			
+	
+### Using Apache Karaf 4.2.6
+If you are using **Apache Karaf 4.2.6**, please use **cxf 3.3.2**
+
+You may need to use correct version that supported by Karaf Runtime
+
+
+	mvn:org.apache.aries.blueprint/org.apache.aries.blueprint.core/1.7.1	
 	
 Screenshot of 
 

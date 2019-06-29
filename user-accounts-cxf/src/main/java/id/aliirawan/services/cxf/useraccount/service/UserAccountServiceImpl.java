@@ -27,8 +27,8 @@ public class UserAccountServiceImpl implements UserAccountService {
 	}
 	
 	@Override
-	public List<UserAccount> findAllByUserId(Integer customerId) {
-		return accounts.stream().filter(a -> a.getId().equals(customerId)).collect(Collectors.toList());
+	public List<UserAccount> findAllByUserId(Integer userId) {
+		return accounts.stream().filter(a -> a.getId().equals(userId)).collect(Collectors.toList());
 	}
 
 }

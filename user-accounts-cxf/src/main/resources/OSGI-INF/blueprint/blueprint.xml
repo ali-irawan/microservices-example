@@ -32,7 +32,7 @@
     
     <service ref="userAccountServiceImpl" interface="id.aliirawan.services.cxf.api.UserAccountService" />
     
-    <jaxrs:server address="/user-account" id="userAccountService">
+    <jaxrs:server address="/account" id="userAccountService">
         <jaxrs:serviceBeans>
             <ref component-id="userAccountServiceImpl" />
         </jaxrs:serviceBeans>
