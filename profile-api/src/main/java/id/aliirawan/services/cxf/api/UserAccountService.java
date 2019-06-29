@@ -12,8 +12,8 @@ import id.aliirawan.services.cxf.api.model.UserAccount;
 public interface UserAccountService {
 
 	@GET
-	@Path("/customer/{customerId}")
+	@Path("/user/{userId}")
 	@Produces("application/json")
-	public List<UserAccount> findAllByUserId(@PathParam("customerId") Integer customerId);
+	public List<UserAccount> findAllByUserId(@PathParam("userId") Integer userId);
 	
 }
