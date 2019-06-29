@@ -46,24 +46,16 @@ Run the **client**
 ### Using Apache Karaf 4.0.8
 If you are using **Apache Karaf 4.0.8** (Archived), please use **cxf 3.1.10**
 
-Install Apache Felix WebConsole
-
+ - Install Apache Felix WebConsole
+ - Add Repo for CXF
+ - Add Repo for Jackson
+ - Install features for CXF
+ - Install features for Jackson-JAXRS-JSON
+ 
 	feature:install webconsole
-
-Add Repo for CXF
-
 	feature:repo-add cxf 3.1.10
-
-Install features for CXF
-
 	feature:install http cxf-jaxrs cxf
-
-Add Repo for Jackson
-
 	feature:repo-add mvn:org.code-house.jackson/features/2.7.6/xml/features
-	
-Install features for Jackson-JAXRS-JSON
-	
 	feature:install jackson-jaxrs-json-provider jetty
 	
 Open the Apache Felix WebConsole from Web Browser
@@ -75,12 +67,14 @@ For example:
 	http://192.168.1.50:8181/system/console			
 	
 ### Using Apache Karaf 4.2.6
+
 If you are using **Apache Karaf 4.2.6**, please use **cxf 3.3.2**
 
 You may need to use correct version that supported by Karaf Runtime
 
 
 	mvn:org.apache.aries.blueprint/org.apache.aries.blueprint.core/1.7.1	
+
 	
 Screenshot of 
 

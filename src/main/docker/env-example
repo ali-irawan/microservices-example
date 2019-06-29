@@ -1,0 +1,8 @@
+KARAF_VERSION=4.0.8
+
+# Latest active distribution
+# Check the active distribution https://karaf.apache.org/download.html
+#KARAF_URL=https://www-us.apache.org
+
+# Archive distribution for version before 4.1.x
+KARAF_URL=http://archive.apache.org
