@@ -21,28 +21,24 @@ public class UserAccountServiceImpl implements UserAccountService {
 	public UserAccountServiceImpl() {
 		// Create dummy data
 		accounts = new ArrayList<UserAccount>(); 
-		accounts.add(new UserAccount(100, UserAccount.ACCOUNT_TYPE_GMAIL, "myemail@gmail.com"));
-		accounts.add(new UserAccount(200, UserAccount.ACCOUNT_TYPE_INSTAGRAM, "myinstagram"));
-		accounts.add(new UserAccount(300, UserAccount.ACCOUNT_TYPE_FACEBOOK, "myfacebook"));
+		accounts.add(new UserAccount(100, UserAccount.ACCOUNT_TYPE_GMAIL, "myemail@gmail.com", 1));
+		accounts.add(new UserAccount(200, UserAccount.ACCOUNT_TYPE_INSTAGRAM, "myinstagram", 2));
+		accounts.add(new UserAccount(300, UserAccount.ACCOUNT_TYPE_FACEBOOK, "myfacebook", 3));
 	}
 	
 	@Override
 	public List<UserAccount> findAllByUserId(Integer userId) {
-		return accounts.stream().filter(a -> a.getId().equals(userId)).collect(Collectors.toList());
+		return accounts.stream().filter(a -> a.getUserId().equals(userId)).collect(Collectors.toList());
 	}
 
-	/**
-	 * @return the accounts
-	 */
-	public List<UserAccount> getAccounts() {
+	@Override
+	public UserAccount findById(Integer id) {
+		return accounts.stream().filter(a -> a.getId().equals(id)).findFirst().get();
+	}
+
+	@Override
+	public List<UserAccount> findAll() {
 		return accounts;
-	}
-
-	/**
-	 * @param accounts the accounts to set
-	 */
-	public void setAccounts(List<UserAccount> accounts) {
-		this.accounts = accounts;
 	}
 
 }

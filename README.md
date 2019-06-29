@@ -84,4 +84,11 @@ Screenshot of Install Bundle
 
 ![Install Bundle](https://raw.githubusercontent.com/ali-irawan/microservices-example/master/src/main/resources/install-bundle.png  "Install Bundle")
 
+# Testing the REST
+
+Open in your browser
+
+	http://192.168.1.50:8181/cxf
+	http://192.168.1.50:8181/cxf/user
+	http://192.168.1.50:8181/cxf/account/user/1
 		

@@ -1,5 +1,6 @@
 package id.aliirawan.services.cxf.api.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -77,6 +78,9 @@ public class User {
 	 * @return the accounts
 	 */
 	public List<UserAccount> getAccounts() {
+		if (accounts == null) {
+			accounts = new ArrayList<UserAccount>();
+		}
 		return accounts;
 	}
 

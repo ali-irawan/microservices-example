@@ -19,17 +19,24 @@ public class UserAccount {
 	private String type;
 	
 	private String accountName;
-
+	
+	private Integer userId;
+	
+	public UserAccount() {
+		
+	}
+	
 	/**
 	 * @param id
 	 * @param type
 	 * @param accountName
 	 */
-	public UserAccount(Integer id, String type, String accountName) {
+	public UserAccount(Integer id, String type, String accountName, Integer userId) {
 		super();
 		this.id = id;
 		this.type = type;
 		this.accountName = accountName;
+		this.userId = userId;
 	}
 
 	/**
@@ -78,6 +85,20 @@ public class UserAccount {
 	 */
 	public void setAccountName(String accountName) {
 		this.accountName = accountName;
+	}
+
+	/**
+	 * @return the userId
+	 */
+	public Integer getUserId() {
+		return userId;
+	}
+
+	/**
+	 * @param userId the userId to set
+	 */
+	public void setUserId(Integer userId) {
+		this.userId = userId;
 	}
 
 	

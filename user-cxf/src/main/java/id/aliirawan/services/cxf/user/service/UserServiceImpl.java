@@ -21,6 +21,7 @@ public class UserServiceImpl implements UserService {
 		users.add(new User(1, "Ali"));
 		users.add(new User(2, "Michael"));
 		users.add(new User(3, "Aditya"));
+		
 	}
 	
 	@Override

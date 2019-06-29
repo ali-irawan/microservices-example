@@ -16,7 +16,7 @@
 		<dependency>
 			<groupId>id.aliirawan</groupId>
 			<artifactId>profile-api</artifactId>
-			<version>${project.version}</version>
+			<version>${project.parent.version}</version>
 		</dependency>
 	</dependencies>
 
