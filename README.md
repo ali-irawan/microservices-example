@@ -50,7 +50,12 @@ For example:
 
 	http://192.168.1.50:8181/system/console			
 	
-Screentshot of 
+Screenshot of 
 
 ![Web Console](https://raw.githubusercontent.com/ali-irawan/microservices-example/master/src/main/resources/webconsole.png  "WebConsole")
+
+Screenshot of Install Bundle
+
+![Install Bundle](https://raw.githubusercontent.com/ali-irawan/microservices-example/master/src/main/resources/install-bundle.png  "Install Bundle")
+
 		
