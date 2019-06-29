@@ -72,7 +72,7 @@ If you are using **Apache Karaf 4.2.6**, please use **cxf 3.3.2**
 
 You may need to use correct version that supported by Karaf Runtime
 
-
+	
 	mvn:org.apache.aries.blueprint/org.apache.aries.blueprint.core/1.7.1	
 
 	
