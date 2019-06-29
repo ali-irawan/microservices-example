@@ -1,0 +1,1 @@
+docker run -d -t --name karaf -p 1099:1099 -p 8101:8101 -p 8181:8181 -p 44444:44444 -v $1:/deploy karaf-api

@@ -19,6 +19,11 @@ Run Karaf Docker
 	
 Change /host/path with some path in your local folder	
 	
+You may also running with scripts
+
+	./build.sh
+	./run.sh /Users/aliirawan/Docker/volumes/karaf
+			
 Make sure the docker container is running
 
 	docker ps
