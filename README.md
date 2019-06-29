@@ -52,5 +52,5 @@ For example:
 	
 Screentshot of 
 
-![](https://raw.githubusercontent.com/ali-irawan/microservices-example/master/src/main/resources/webconsole.png =250x)
+![Web Console](https://raw.githubusercontent.com/ali-irawan/microservices-example/master/src/main/resources/webconsole.png  "WebConsole")
 		
